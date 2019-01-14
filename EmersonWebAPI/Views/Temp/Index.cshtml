@@ -8,18 +8,18 @@
     <div class="col-md-4">
         <label class="" style="position:relative; right:13px;"><b>Min:</b></label>
         <div class="row">
-            <input class="formInput form-control" autocorrect="off" oncontextmenu="return false;" onkeypress="return isNumberKey(event)" type="number" name="min" max="1350" min="-50" value="@TempData["pvLow"]" style="width: 75%; "/>
-            <button type="button" class="btn btn-lg btn-primary btn-pop"  data-trigger="focus" data-toggle="popover" title="Min" data-content="Minimum temperature value is -50." style="margin-left:20px; background-color:#004B8D;"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
+            <input class="formInput form-control" autocorrect="off" oncontextmenu="return false;" onkeypress="return isNumberKey(event)" type="number" name="min" max="1350" min="-50" value="@TempData["pvLow"]" style="width: 75%;"/>
+            <button type="button" class="btn btn-lg btn-primary btn-pop" data-trigger="focus" data-toggle="popover" title="Min" data-content="Minimum temperature value is -50." style="margin-left:20px; background-color:#004B8D;"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
         </div>
     </div>
     <div class="col-md-4" style="margin-top:15px;">
         <label style="position:relative; right:13px;"><b>Max:</b></label>
         <div class="row">
             <input class="formInput form-control" autocorrect="off" oncontextmenu="return false;" onkeypress="return isNumberKey(event)" type="number" name="max" max="1350" min="-50" value="@TempData["pvHigh"]" style="width: 75%;"/>
-            <button type="button" class="btn btn-lg btn-primary btn-pop"  data-trigger="focus" data-toggle="popover" title="Max" data-content="Maximum temperature value is 1350." style="margin-left:20px; background-color:#004B8D;"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-lg btn-primary btn-pop" data-trigger="focus" data-toggle="popover" title="Max" data-content="Maximum temperature value is 1350." style="margin-left:20px; background-color:#004B8D;"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
         </div>
     </div>
-    <button class="formSubmit btn" style="background-color:#004B8D; color: #fff; margin-top: 10px;" type="button" >Submit <i class="fa fa-spinner fa-spin" aria-hidden="true" style="margin-left:5px;"></i></button>
+    <button class="formSubmit btn" style="background-color:#004B8D; color: #fff; margin-top: 10px;" type="submit">Submit <i class="fa fa-spinner fa-spin" aria-hidden="true" style="margin-left:5px;"></i></button>
 </form>
 <script language=Javascript>
     $(".fa-spinner").hide();
@@ -37,6 +37,5 @@
     });
     $(".formSubmit").click(function () {
         $(".fa-spinner").show();
-        $("#formCalib").submit();
     });
 </script>
